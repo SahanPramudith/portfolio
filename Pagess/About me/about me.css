@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+.h{
+    background-color: #161A30;
+}
+@media screen and (max-width: 320px) {
+    .navlink,.body,.img,.body-1{
+      width: 100%;
+      display: block;
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	background-color: #161A30;
+}
+.navlink {
+	
+    text-decoration: none;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+	color: #F0ECE5;
+	font-family: Roboto;
+	font-weight: bold;
+	position: relative;
+	outline: none !important;
+	text-transform: uppercase;
+	
+}
+.navlink:hover{
+    color: #92C7CF;
+}
+
+.navlink::after {
+	content: "";
+	background-color: rgb(230, 37, 37);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0;
+	transition: 0.2s;
+}
+
+
+
+.navlink:hover::after,
+.navlink:focus::after {
+	background-color: #b41310;
+	width: 100%;
+}
+
+.aboutme{
+	display: flex;
+	flex-wrap: wrap;
+	color: aliceblue;
+	background-color:#31304D;
+	justify-content: center;
+}
+.p-1{
+	background-color: #F0ECE5;
+	width: 900px;
+	margin: 80px;
+	padding: 20px;
+	font-size: 20px;
+}
+.p-1 p {
+	border: 2px solid red;
+	border-radius: 10px;
+	margin: px;
+	padding: 5px;
+	background-color: #92C7CF;
+}
